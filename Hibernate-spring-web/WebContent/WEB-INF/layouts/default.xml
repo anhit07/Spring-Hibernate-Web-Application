@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="offers.base" template="/WEB-INF/templates/default.jsp">
+		<put-attribute name="title" value="Offers Homepage"></put-attribute>
+		<!-- <put-attribute name="includes" value="/WEB-INF/titles/newaccountscript.jsp"></put-attribute> -->
+		<put-attribute name="header" value="/WEB-INF/titles/header.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/titles/footer.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/titles/content.jsp"></put-attribute>
+		<put-attribute name="toolbar" value=""></put-attribute>
+	</definition>
+
+	<definition name="home" extends="offers.base">
+		<put-attribute name="title" value="Homepage"></put-attribute>
+		<put-attribute name="toolbar" value="/WEB-INF/titles/toolbar.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/home.jsp"></put-attribute>
+	</definition>
+
+	<definition name="login" extends="offers.base">
+		<put-attribute name="title" value="Login"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/login.jsp"></put-attribute>
+	</definition>
+
+	<definition name="offers" extends="offers.base">
+		<put-attribute name="title" value="Offers"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/offers.jsp"></put-attribute>
+	</definition>
+
+	<definition name="newaccount" extends="offers.base">
+		<put-attribute name="includes"
+			value="/WEB-INF/titles/newaccountscript.jsp"></put-attribute>
+		<put-attribute name="title" value="New Account"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/newaccount.jsp"></put-attribute>
+	</definition>
+
+	<definition name="createoffer" extends="offers.base">
+		<put-attribute name="title" value="New Offer"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/createoffer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="offercreated" extends="offers.base">
+		<put-attribute name="title" value="Offer Created"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/offercreated.jsp"></put-attribute>
+	</definition>
+
+	<definition name="denied" extends="offers.base">
+		<put-attribute name="title" value="Denied Access"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/denied.jsp"></put-attribute>
+	</definition>
+
+	<definition name="offerdeleted" extends="offers.base">
+		<put-attribute name="title" value="Offer Deleted"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/offerdeleted.jsp"></put-attribute>
+	</definition>
+
+	<definition name="error" extends="offers.base">
+		<put-attribute name="title" value="Error"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/error.jsp"></put-attribute>
+	</definition>
+
+	<definition name="showContactForm" extends="offers.base">
+		<put-attribute name="title" value="Start Message"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/contact.jsp"></put-attribute>
+	</definition>
+
+	<definition name="messagesent" extends="offers.base">
+		<put-attribute name="title" value="Message Sent"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/messagesent.jsp"></put-attribute>
+	</definition>
+
+	<definition name="messages" extends="offers.base">
+		<put-attribute name="title" value="Messages"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/jsps/messages.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>
